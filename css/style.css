@@ -1,5 +1,6 @@
 html{
 	background-color: #eee !important;
+	scroll-behavior: smooth;
 	
 }
 
@@ -75,7 +76,7 @@ a.block:hover, a:visited.block:hover {
 }
 
 #paper{
-	margin: 20px !important; 
+	margin: 30px !important; 
 	position: fixed;
 }
 

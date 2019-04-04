@@ -72,7 +72,7 @@
     this.lifeSpan = 120; //ms
     this.initialStyles ={
       "position": "absolute",
-      "display": "block",
+      "display": "inline-block",
       "pointerEvents": "none",
       "z-index": "10000000",
       "fontSize": "16px",
