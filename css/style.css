@@ -1,5 +1,5 @@
-html, body{
-	background-color: #eee;
+html{
+	background-color: #eee !important;
 	
 }
 
@@ -76,6 +76,7 @@ a.block:hover, a:visited.block:hover {
 
 #paper{
 	margin: 20px !important; 
+	position: fixed;
 }
 
 
