@@ -45,13 +45,13 @@ a{
 
 
 
-a, a:visited {
+.title, .title:visited {
   text-decoration: none;
   position: relative;
   color: #333;
 }
 
-a:after, a:visited:after {
+.title:after, .title:visited:after {
   content: '';
   height: 3px;
   position: absolute;
@@ -62,42 +62,19 @@ a:after, a:visited:after {
   transition: 0.2s;
 }
 
-a:hover:after, a:visited:hover:after {
+.title:hover:after, .title:visited:hover:after {
   width: 100%;
 }
 
-a.block, a:visited.block {
-  display: block;
-  padding: 0.5em;
-}
 
-a.block:hover, a:visited.block:hover {
-  background: #eee;
-}
+
 
 #paper{
-	margin: 30px !important; 
-	position: fixed;
-}
-
-
-#pic1:hover, #pic2:hover {
-  animation: shake 0.1s; 
-  animation-iteration-count: infinite; 
-}
-
-@keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
+	margin-left: 30px !important;
+  margin-bottom: 30px !important;
+  margin-right: 30px !important; 
+  margin-top: 10px !important;
+	position: relative;
 }
 
 
@@ -113,4 +90,21 @@ a.block:hover, a:visited.block:hover {
 ::-webkit-scrollbar-thumb {
   background: #eee; 
   border-radius: 10px;
+}
+
+
+.grow { 
+  transition: all .2s ease-in-out; 
+}
+
+.grow:hover { 
+  transform: scale(2);
+}
+
+.growpic { 
+  transition: all .2s ease-in-out; 
+}
+
+.growpic:hover { 
+  transform: scale(1.2);
 }
